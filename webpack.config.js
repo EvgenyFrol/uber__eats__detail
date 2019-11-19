@@ -10,6 +10,11 @@ const extractSass = new ExtractTextPlugin({
 });
 
 module.exports = {
+  watch: true,
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+  },
   entry: {
     "js/index": "./src/js/index.js"
   },
