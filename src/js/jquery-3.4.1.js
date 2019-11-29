@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <script>/*!
+/*!
  * jQuery JavaScript Library v3.4.1
  * https://jquery.com/
  *
@@ -10601,66 +10596,3 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
-
-    </script>
-  <link href="./css/style.css" rel="stylesheet"></head>
-  <body>
-    <header class="header">
-      <div class="header__wrapper"><a href="/"><img class="header__logo" src="/images/logo.png" alt="Uber Eats Logo"></a>
-        <div class="header__button">
-          <button class="header__button button button__autorize" href="#">Войти</button>
-          <button class="header__button button button__basket" href="#"><img src="/images/basket.png"></button>
-        </div>
-      </div>
-    </header>
-    <section class="banner">
-      <div class="banner__wrapper">
-        <h2 class="banner__title">Трактир «Пушкин» </h2>
-        <div class="banner__descWrapper">
-          <p class="banner__desc">₽₽₽ • Европейская</p>
-          <div class="banner__deliWrapper">
-            <p class="banner__deli">40 - 50 минут</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="menu"> 
-      <div class="menu__wrapper"><a class="menu__dishes" href="#">Закуски</a><a class="menu__dishes" href="#">Салаты</a><a class="menu__dishes" href="#">Супы</a><a class="menu__dishes" href="#">Горячие блюда</a><a class="menu__dishes" href="#">Гарниры</a><a class="menu__dishes" href="#">Десерты</a>
-      </div>
-    </section>
-    <section class="dishes">
-      <h3 class="dishes__typeTitle">Закуски
-        <div class="dishes__wrapper">
-          <h3 class="dishes__title">Сельдь на бородинском хлебе</h3><img class="dishes__image" src="/images/dish__1.svg" alt="dishes__img">
-          <p class="dishes__desc">С яйцом и огурцом</p>
-          <p class="dishes__price">240 ₽</p>
-        </div>
-        <div class="dishes__wrapper">
-          <h3 class="dishes__title">Соленья ассорти</h3><img class="dishes__image" src="/images/dish__2.svg" alt="dishes__img">
-          <p class="dishes__desc"></p>
-          <p class="dishes__price">320 ₽</p>
-        </div>
-        <div class="dishes__wrapper">
-          <h3 class="dishes__title">Грибы маринованные</h3><img class="dishes__image" src="/images/dish__3.svg" alt="dishes__img">
-          <p class="dishes__desc"></p>
-          <p class="dishes__price">300 ₽</p>
-        </div>
-        <div class="dishes__wrapper">
-          <h3 class="dishes__title">Сало домашнее с горчицей</h3><img class="dishes__image" src="/images/dish__4.svg" alt="dishes__img">
-          <p class="dishes__desc"></p>
-          <p class="dishes__price">320 ₽</p>
-        </div>
-        <div class="dishes__wrapper">
-          <h3 class="dishes__title">Малосольная семга</h3><img class="dishes__image" src="/images/dish__5.svg" alt="dishes__img">
-          <p class="dishes__desc"></p>
-          <p class="dishes__price">390 ₽</p>
-        </div>
-        <div class="dishes__wrapper">
-          <h3 class="dishes__title">Язык говяжий с хреном</h3><img class="dishes__image" src="/images/dish__6.svg" alt="dishes__img">
-          <p class="dishes__desc"></p>
-          <p class="dishes__price">350 ₽</p>
-        </div>
-      </h3>
-    </section>
-  <script type="text/javascript" src="./js/index.js"></script></body>
-</html>

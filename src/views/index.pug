@@ -1,8 +1,86 @@
+include logo__link.pug
+include about.pug
+include help.pug
+include store.pug
+include menu.pug
+include dishes.pug
+
 doctype html
 html
   head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width initial-scale=1")
+    script
+      include ../js/jquery-3.4.1.js
+
   body
-    p Привет1sadasd
-    p 12356711
+    header.header
+      .header__wrapper
+        a(href="/")
+          img.header__logo(src="/images/logo.png" alt="Uber Eats Logo")
+
+        .header__button
+          button.header__button.button.button__autorize(href="#") Войти
+          button.header__button.button.button__basket(href="#")
+            img(src="/images/basket.png")
+
+    section.banner
+      .banner__wrapper
+        h2.banner__title Трактир «Пушкин» 
+        .banner__descWrapper
+          p.banner__desc ₽₽₽ • Европейская
+          .banner__deliWrapper
+            p.banner__deli 40 - 50 минут
+
+    section.menu 
+      .menu__wrapper
+        each item in menu
+          a.menu__dishes(href="#")= item.type
+
+    section.dishes
+      h3.dishes__typeTitle Закуски
+        each item in dishes
+          .dishes__wrapper
+            h3.dishes__title= item.title
+            img.dishes__image(src= item.image alt="dishes__img")
+            p.dishes__desc= item.desc
+            p.dishes__price= item.price
+
+    //- footer.footers
+    //-   .footer__wrapper
+    //-     .footer__logoImg
+    //-       img.footer__logo(src="/images/footer-logo.png" alt="footer__logo")
+
+    //-     .footer__menu
+    //-       .footer__socialLink
+    //-         select.footer__selectLang
+    //-           .footer__selectLangWorld
+    //-           option.footer__selectText(value="1") Русский
+    //-           option.footer__selectText(value="2") English
+    //-         p.footer__selectLang--text #
+    //-           span.footer__span UberEats
+    //-         .footer__selectLangSocial
+    //-           each item in logoLink
+    //-             a(href= item.href target="_blank")
+    //-               img.footer__selectLangSocialLink(src= item.logo alt= item.alt)
+
+    //-       .footer__aboutUberEats
+    //-         each item in dataAbout
+    //-           a.footer__aboutUberEatsLinks.footer__links(href="#")= item.link
+
+    //-       .footer__help
+    //-         each item in information
+    //-           a.footer__helpLinks.footer__links(href="#")= item.inf
+
+    //-     .footer__app
+    //-       each item in appStore
+    //-         button.footer__button.button__app
+    //-           a(href= item.link target="_blank")
+    //-             img.app__logo(src= item.logo alt="app__logo")
+
+    //-     .footer__footer
+    //-       each item in foot
+    //-         p.footer__footerText= item.text
+
+    //- button.scrollTo(href="#")
+    //-   img.scrollToImage(src="/images/button__up.png")

@@ -1,21 +1,16 @@
 import '../style/main.scss';
-import Tesst from './test';
 
-Tesst(()=>{
-  // alert("yo")
+$(document).ready(function() {
+
+  $(window).scroll(function() {
+    if ($("body,html").scrollTop() > 100) {
+      $(".scrollTo").fadeIn()
+    } else {
+      $(".scrollTo").fadeOut()
+    }
+  });
+
+  $(".scrollTo").click(function() {
+    $("body,html").animate({scrollTop: 0}, 700)
+  })
 })
-
-const FF = {
-  say_yo(text = "работает"){
-    document.write(text);
-  },
-  yyy: 1
-}
-
-
-let gg = {
-  ...FF,
-  vv: 4
-}
-
-gg.say_yo(" спред !!!");
