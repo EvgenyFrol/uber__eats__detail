@@ -1,7 +1,6 @@
 import '../style/main.scss';
 
 $(document).ready(function() {
-
   $(window).scroll(function() {
     if ($("body,html").scrollTop() > 100) {
       $(".scrollTo").fadeIn()
@@ -14,3 +13,9 @@ $(document).ready(function() {
     $("body,html").animate({scrollTop: 0}, 700)
   })
 })
+
+// $(document).ready(function() {
+//   $(".footer__select").click(function() {
+    
+//   })
+// })
